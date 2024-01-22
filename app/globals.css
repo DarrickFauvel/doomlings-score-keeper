@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.heading {
+  position: relative;
+  display: inline-block;
+  padding: 10px; /* Optional: Add padding for better visibility */
+  background-image: linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading::before {
+  content: attr(
+    data-text
+  ); /* Use the content attribute to display the actual text */
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: -1; /* Move the shadow behind the text */
+  text-shadow: 10px 10px 0 #fff; /* White shadow with an offset of 10px */
+}
