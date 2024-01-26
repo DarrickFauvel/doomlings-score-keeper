@@ -7,13 +7,13 @@ import { Button } from "@/components/Button"
 export function NamesView() {
   const [playerName, setPlayerName] = useState("")
   const [players, setPlayers] = useState([])
-  const inputRef = useRef<HTMLInputElement>(null)
+  const inputRef = useRef(null)
 
   const handleChange = (e) => {
     setPlayerName(e.target.value)
   }
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleClick = (e) => {
     e.preventDefault()
     if (playerName) {
       setPlayers((prevPlayers) => {

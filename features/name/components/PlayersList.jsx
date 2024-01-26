@@ -1,8 +1,4 @@
-type Props = {
-  players: string[]
-}
-
-export function PlayersList({ players }: Props) {
+export function PlayersList({ players }) {
   return (
     <ul>
       {players.map((player, index) => (
