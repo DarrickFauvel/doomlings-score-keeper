@@ -21,6 +21,19 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "features/name/components/PlayersView.jsx",
+    "components/Button.jsx",
+    "features/name/components/PlayersList.jsx",
+    "features/name/index.js",
+    "features/header/components/Header.jsx",
+    "features/header/index.js",
+    "app/layout.jsx",
+    "app/page.jsx"
+  ],
   "exclude": ["node_modules"]
 }
